@@ -5,7 +5,9 @@ COPY . /usr/src/app
 WORKDIR /usr/src/app
 
 RUN npm install
+
 RUN git submodule init
+
 RUN git submodule update
 
 EXPOSE 3000
